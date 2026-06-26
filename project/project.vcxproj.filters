@@ -49,16 +49,16 @@
     <ClCompile Include="Library\Time.cpp">
       <Filter>Library</Filter>
     </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>PlayScene</Filter>
-    </ClCompile>
-    <ClCompile Include="Window.cpp">
-      <Filter>PlayScene</Filter>
-    </ClCompile>
     <ClCompile Include="Source\SceneFactory.cpp">
       <Filter>PlayScene</Filter>
     </ClCompile>
-    <ClCompile Include="Finish.cpp">
+    <ClCompile Include="Source\Finish.cpp">
+      <Filter>PlayScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Player.cpp">
+      <Filter>PlayScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Window.cpp">
       <Filter>PlayScene</Filter>
     </ClCompile>
   </ItemGroup>
@@ -138,6 +138,7 @@
     <ClInclude Include="Source\Finish.h">
       <Filter>PlayScene</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Library">
@@ -155,5 +156,8 @@
     <Filter Include="ImGui">
       <UniqueIdentifier>{a717257b-67b3-4bfa-834c-1e34032b33b0}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="project.rc" />
   </ItemGroup>
 </Project>

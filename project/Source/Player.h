@@ -9,7 +9,7 @@ public:
 	~Player();
 	void Update() override;
 	void Draw() override;
-
+	int GetScore() const { return score; }
 	int mouseX, mouseY; // マウス座標用変数
 	int circleX = 100;
 	int circleY = 100;
@@ -17,6 +17,6 @@ public:
 	bool isHit = false;
 	int prevMouseInput = 0;
 	std::vector<Window*> windows;
-private:
-
+private: 
+	int score = 0;
 };

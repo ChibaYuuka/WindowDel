@@ -8,7 +8,8 @@ public:
 	~Finish();
 	void Update() override;
 	void Draw() override;
-	int score;
+
 private:
 	int hImage;
+	int fontHandle_;
 };

@@ -18,5 +18,5 @@ private:
 	int w, h;		//	表示サイズ
 	int circleX;
 	int circleY;
-	int radius = 10;
+	int radius = 10;	
 };

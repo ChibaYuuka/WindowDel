@@ -2,7 +2,7 @@
 #include "DxLib.h"
 //#include <math.h>
 #include "Player.h"
-//#include "Window.h"
+#include "Finish.h"
 
 PlayScene::PlayScene()
 {
@@ -43,4 +43,6 @@ void PlayScene::Draw()
 	DrawString(0, 0, "PLAY SCENE", GetColor(255, 255, 255));
 	//DrawString(100, 400, "Push [T]Key To Title", GetColor(255, 255, 255));
 	DrawFormatString(100, 100, GetColor(255, 0, 0), "Time: %d",remain);
+	Finish finish;
+	if (timeUp) { finish.Draw(); }
 }
