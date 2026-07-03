@@ -27,7 +27,6 @@ void Window::Update()
 
 void Window::Draw()
 {
-
 	DrawExtendGraph(x, y, x + w, y + h, hImage, true);
 	DrawCircle(circleX, circleY, radius, GetColor(255, 0, 0), TRUE);
 }

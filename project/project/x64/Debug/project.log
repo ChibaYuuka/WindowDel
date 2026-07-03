@@ -1,22 +1,2 @@
-﻿  imgui.cpp
-  imgui_draw.cpp
-  imgui_impl_dx11.cpp
-  imgui_impl_dx9.cpp
-  imgui_impl_win32.cpp
-  imgui_ja_gryph_ranges.cpp
-  imgui_tables.cpp
-  imgui_widgets.cpp
-  App.cpp
-  main.cpp
-  ObjectManager.cpp
-  SceneManager.cpp
-  Time.cpp
-  BootScene.cpp
-  Finish.cpp
-  Player.cpp
-  PlayScene.cpp
-  SceneFactory.cpp
-  TitleScene.cpp
-  Window.cpp
-  コードを生成中...
-  project.vcxproj -> C:\Users\ycnek\Downloads\kojinn\project\x64\Debug\project.exe
+﻿  TitleScene.cpp
+  project.vcxproj -> D:\金3限\ウィンドウ\ウィンドウ消し\project\x64\Debug\project.exe
