@@ -61,6 +61,7 @@
     <ClCompile Include="Source\Window.cpp">
       <Filter>PlayScene</Filter>
     </ClCompile>
+    <ClCompile Include="GameSetting.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Library\App.h">
@@ -139,6 +140,7 @@
       <Filter>PlayScene</Filter>
     </ClInclude>
     <ClInclude Include="resource.h" />
+    <ClInclude Include="Source\GameSetting.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Library">

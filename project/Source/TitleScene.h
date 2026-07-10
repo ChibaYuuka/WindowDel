@@ -15,4 +15,7 @@ public:
 	void Draw() override;
 private:
 	int hImage;
+	int fontHandle;
+	bool prevRight = false;
+	bool prevLeft = false;
 };

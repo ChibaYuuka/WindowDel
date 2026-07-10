@@ -157,6 +157,7 @@
     <ClInclude Include="resource.h" />
     <ClInclude Include="Source\BootScene.h" />
     <ClInclude Include="Source\Finish.h" />
+    <ClInclude Include="Source\GameSetting.h" />
     <ClInclude Include="Source\Player.h" />
     <ClInclude Include="Source\Screen.h" />
     <ClInclude Include="Source\PlayScene.h" />
@@ -165,6 +166,7 @@
     <ClInclude Include="Source\Window.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="GameSetting.cpp" />
     <ClCompile Include="ImGui\imgui.cpp" />
     <ClCompile Include="ImGui\imgui_draw.cpp" />
     <ClCompile Include="ImGui\imgui_impl_dx11.cpp" />

@@ -4,10 +4,11 @@
 //#include <algorithm>
 #include "PlayScene.h"
 #include "Finish.h"
+#include "GameSetting.h"
 
 Player::Player()
 {
-    for (int i = 0; i < 15; i++)
+    for (int i = 0; i < GameSetting::WinCount; i++)
     {
         windows.push_back(new Window());
     }
@@ -32,12 +33,12 @@ void Player::Update()
 
     PlayScene* scene = dynamic_cast<PlayScene*>(SceneManager::CurrentScene());
 
-    if (scene && scene->IsTimeUp())
-    {
-        //フォントサイズ変える
-        DrawString(0, 0, "Game Over", GetColor(255, 0, 0));
-        return;
-    }
+    //if (scene && scene->IsTimeUp())
+    //{
+    //    //フォントサイズ変える
+    //    DrawString(0, 0, "Game Over", GetColor(255, 0, 0));
+    //    return;
+    //}
 
     // 左クリック判定
     if (leftClick)
