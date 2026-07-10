@@ -17,4 +17,5 @@ private:
 	int limit = 15;//15
 	int remain = 15;//
 	bool timeUp = false;
+	int fontHandle;
 };

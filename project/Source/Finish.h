@@ -11,5 +11,5 @@ public:
 
 private:
 	int hImage;
-	int fontHandle_;
+	int fontHandle; 
 };

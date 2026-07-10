@@ -1,2 +1,6 @@
-﻿  TitleScene.cpp
-  project.vcxproj -> D:\金3限\ウィンドウ\ウィンドウ消し\project\x64\Debug\project.exe
+﻿  Finish.cpp
+  PlayScene.cpp
+  Player.cpp
+  SceneFactory.cpp
+  コードを生成中...
+  project.vcxproj -> C:\Users\ycnek\Downloads\個人製作\project\x64\Debug\project.exe
