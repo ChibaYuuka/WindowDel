@@ -23,7 +23,7 @@ void TitleScene::Update()
 	if (CheckHitKey(KEY_INPUT_ESCAPE)) {
 		SceneManager::Exit();
 	}
-	if (CheckHitKey(KEY_INPUT_RIGHT) && !prevRight) {
+	if (CheckHitKey(KEY_INPUT_RIGHT) && !prevRight) {//windowの数調整
 			GameSetting::WinCount++;
 	}
 	if (CheckHitKey(KEY_INPUT_LEFT) && !prevLeft) {
@@ -43,7 +43,4 @@ void TitleScene::Draw()
 	DrawString(0, 20, Version(), GetColor(255,255,255));
 	DrawFormatStringToHandle(100, 100, GetColor(50, 30, 200),fontHandle, "WINDOW:%d", GameSetting::WinCount);
 	DrawFormatStringToHandle(100, 130, GetColor(50, 30, 200), fontHandle, "左右キーでウィンドウ数変更");
-	//DrawString(0, 0, "TITLE SCENE", GetColor(255,255,255));
-	//DrawFormatString(100, 100, GetColor(255,255,255), "%4.1f", 1.0f / Time::DeltaTime());
-	//DrawString(100, 400, "Push [P]Key To Play", GetColor(255, 255, 255));
 }

@@ -1,8 +1,6 @@
 #include "Window.h"
-//#include "Source/Player.h"
 #include <assert.h>
-//#define _USE_MATH_DEFINES
-//#include <math.h>
+
 Window::Window()
 {
 	hImage = LoadGraph("data/WindowLine.png");

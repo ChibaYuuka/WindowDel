@@ -1,6 +1,5 @@
 #include "PlayScene.h"
 #include "DxLib.h"
-//#include <math.h>
 #include "Player.h"
 #include "Finish.h"
 
@@ -11,7 +10,7 @@ PlayScene::PlayScene()
 	SetBackgroundColor(30, 60, 200);
     startTime = GetNowCount();
 	Instantiate<Player>();
-	//Instantiate<Window>();
+	Instantiate<Finish>();
 	fontHandle = CreateFontToHandle("ÇµÇÒÇŒÇµÉSÉ`ÉbÉN", 25, 2, DX_FONTTYPE_EDGE);
 }
 
@@ -45,9 +44,10 @@ bool PlayScene::IsTimeUp()
 
 void PlayScene::Draw()
 {
-	//DrawString(0, 0, "PLAY SCENE", GetColor(255, 255, 255));
-	//DrawString(100, 400, "Push [T]Key To Title", GetColor(255, 255, 255));
 	DrawFormatStringToHandle(100, 100,GetColor(255, 0, 0),fontHandle,"Time: %d", remain);
-	Finish finish;
-	if (timeUp) { finish.Draw(); }
+	//Finish* finish = FindGameObject<Finish>();
+	//if (finish != nullptr && timeUp)
+	//{
+	//	finish->Draw();
+	//}
 }

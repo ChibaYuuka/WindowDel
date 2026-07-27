@@ -1,7 +1,4 @@
 #include "Player.h"
-//#include "Source/Window.h"
-//#include <assert.h>
-//#include <algorithm>
 #include "PlayScene.h"
 #include "Finish.h"
 #include "GameSetting.h"
@@ -28,43 +25,22 @@ void Player::Update()
     int mouseInput = GetMouseInput();
     bool leftClick = (mouseInput & MOUSE_INPUT_LEFT) && !(prevMouseInput & MOUSE_INPUT_LEFT);
     prevMouseInput = mouseInput;
-    //isHit = false;
-    //Finish finish;
 
     PlayScene* scene = dynamic_cast<PlayScene*>(SceneManager::CurrentScene());
 
-    //if (scene && scene->IsTimeUp())
-    //{
-    //    //フォントサイズ変える
-    //    DrawString(0, 0, "Game Over", GetColor(255, 0, 0));
-    //    return;
-    //}
-
-    // 左クリック判定
-    if (leftClick)
+    if (scene == nullptr || !scene->IsTimeUp())
     {
-
-        //    // 円の中心からの距離を計算
-        //    int dx = mouseX - circleX;
-        //    int dy = mouseY - circleY;
-
-        //    // 半径内か判定
-        //    if (dx * dx + dy * dy <= radius * radius)
-        //    {
-        //        isHit = true;
-        //    }
-        //}
-        //prevMouseInput = mouseInput;
-
-        for (auto window : windows)
+        // 左クリック判定
+        if (leftClick)
         {
-            if (window->IsCircleClicked(mouseX, mouseY))
+            for (auto window : windows)
             {
-                score += 100;//スコア加算
-                window->isDead = true;
-                //isHit = true;
+                if (window->IsCircleClicked(mouseX, mouseY))
+                {
+                    score += 100;//スコア加算
+                    window->isDead = true;
+                }
             }
-            /*  window->Update();*/
         }
     }
 
@@ -81,14 +57,6 @@ void Player::Update()
 }
 void Player::Draw()
 {
-    //DrawCircle(circleX, circleY, radius, GetColor(255, 255, 255), FALSE);
-
-    //if (isHit)//デバック用
-    //{
-    //    DrawString(10, 10, "円の中！", GetColor(255, 0, 0));
-    //    //DrawFormatString(10, 40, GetColor(255, 255, 255), "Mouse : %d %d", mouseX, mouseY);
-    //}
-
     for (auto window : windows)
     {
         window->Draw();
