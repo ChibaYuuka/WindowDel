@@ -1,4 +1,10 @@
-﻿  Finish.cpp
+﻿  GameSetting.cpp
+  main.cpp
+  Finish.cpp
   PlayScene.cpp
+  Player.cpp
+  SceneFactory.cpp
+  TitleScene.cpp
+  Window.cpp
   コードを生成中...
   project.vcxproj -> C:\Users\ycnek\Downloads\個人製作\project\x64\Debug\project.exe
