@@ -3,8 +3,6 @@
 #include "Player.h"
 #include "Finish.h"
 
-
-
 PlayScene::PlayScene()
 {
 	SetBackgroundColor(30, 60, 200);
@@ -30,9 +28,9 @@ void PlayScene::Update()
 		timeUp = true;
 	}
 
-    if (CheckHitKey(KEY_INPUT_T)) {
-        SceneManager::ChangeScene("TITLE");
-    }
+    //if (CheckHitKey(KEY_INPUT_T)) {
+    //    SceneManager::ChangeScene("TITLE");
+    //}
     if (CheckHitKey(KEY_INPUT_ESCAPE)) {
         SceneManager::Exit();
     }

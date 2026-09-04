@@ -14,7 +14,6 @@ public:
 
 private:
 	int hImage;
-	//int hImage2;
 	int x, y;		//	表示座標
 	int w, h;		//	表示サイズ
 	int circleX;
